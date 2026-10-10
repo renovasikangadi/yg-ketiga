@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Kang Adi melayani jasa renovasi rumah, bangun rumah baru, kanopi, dapur, plafon, keramik, cat, dan perbaikan rumah area Jabodetabek. Konsultasi via WhatsApp.">
+  <title>Kang Adi | Jasa Renovasi Rumah & Bangun Baru</title>
+  <link rel="icon" href="assets/logo-kang-adi.webp">
+  <style>
+    :root{--black:#111;--gold:#d8ad55;--cream:#f7f5f0;--ink:#222;--muted:#666;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{background:var(--black);color:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #292929}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-size:1.15rem;font-weight:800;letter-spacing:.4px}.brand span{color:var(--gold)}.brand img{width:48px;height:48px;object-fit:contain;border-radius:6px}.brand-text{display:flex;flex-direction:column;line-height:1.15}.brand small{font-size:.62rem;font-weight:600;letter-spacing:1px;color:#ddd;margin-top:4px}
+    .navlinks{display:flex;gap:22px;font-size:.93rem;color:#eee}
+    .navlinks a:hover{color:var(--gold)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#171717;padding:13px 19px;border-radius:8px;font-weight:800;border:0;cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+    .btn.outline{background:transparent;color:#fff;border:1px solid #d8ad55}
+    .hero{background:linear-gradient(110deg,rgba(10,10,10,.94),rgba(10,10,10,.67)),url('assets/kanopi-selesai.jpg') center/cover;color:#fff;padding:92px 0 86px}
+    .eyebrow{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
+    h1{font-size:clamp(2.2rem,5vw,4.2rem);line-height:1.1;margin:14px 0 18px;max-width:780px}
+    .hero p{font-size:1.08rem;color:#e6e6e6;max-width:650px;margin:0 0 27px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:34px;color:#eee;font-size:.92rem}
+    .trust span:before{content:"✓";color:var(--gold);font-weight:bold;margin-right:8px}
+    section{padding:72px 0}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 36px}
+    .section-head h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.2;margin:8px 0 12px;color:var(--black)}
+    .section-head p{color:var(--muted);margin:0}
+    .services{background:var(--cream)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border:1px solid #eee;border-radius:14px;padding:24px;box-shadow:0 8px 24px rgba(0,0,0,.035)}
+    .ico{width:46px;height:46px;border-radius:12px;background:#f8edda;display:grid;place-items:center;font-size:1.4rem;margin-bottom:14px}
+    .card h3{margin:0 0 8px;font-size:1.12rem}.card p{margin:0;color:var(--muted);font-size:.95rem}
+    .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+    .photo{min-height:390px;border-radius:18px;background:linear-gradient(0deg,rgba(0,0,0,.1),rgba(0,0,0,.1)),url('assets/rumah-loster.jpg') center/cover}
+    .why h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.2;margin:8px 0 15px}
+    .why p{color:var(--muted)}
+    .checklist{padding:0;list-style:none}
+    .checklist li{padding:8px 0}.checklist li:before{content:"✓";color:#a67b27;font-weight:bold;margin-right:10px}
+    .steps{background:var(--black);color:#fff}
+    .steps .section-head h2{color:#fff}.steps .section-head p{color:#ccc}
+    .step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .step{border:1px solid #333;border-radius:14px;padding:23px}
+    .num{color:var(--gold);font-size:1.6rem;font-weight:900}
+    .step h3{margin:5px 0 7px}.step p{color:#ccc;margin:0;font-size:.95rem}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .gallery img{width:100%;height:230px;object-fit:cover;border-radius:12px;background:#eee}
+    .gallery-note{text-align:center;color:var(--muted);font-size:.9rem;margin-top:14px}
+    .cta{background:var(--gold);padding:54px 0}
+    .cta-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .cta h2{margin:0 0 8px;font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.2}
+    .cta p{margin:0;color:#3d3018}
+    .cta .btn{background:#111;color:#fff;white-space:nowrap}
+    .contact{background:#f7f5f0}
+    .contactbox{background:#fff;border:1px solid #eee;border-radius:16px;padding:30px;max-width:760px;margin:auto;text-align:center}
+    footer{background:#0b0b0b;color:#ccc;padding:28px 0;font-size:.88rem}
+    footer .foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    .wa-float{position:fixed;right:18px;bottom:18px;z-index:20;background:#25d366;color:#fff;padding:13px 17px;border-radius:999px;font-weight:800;box-shadow:0 5px 20px #0003}
+    @media(max-width:760px){
+      .navlinks{display:none}.brand img{width:40px;height:40px}.brand small{font-size:.52rem}.nav .btn{padding:10px 12px;font-size:.85rem}
+      .hero{padding:68px 0}.cards,.step-grid{grid-template-columns:1fr}
+      .why-grid{grid-template-columns:1fr}.photo{min-height:270px;order:2}
+      section{padding:56px 0}.gallery{grid-template-columns:1fr 1fr}.gallery img{height:160px}
+      .cta-inner{align-items:flex-start;flex-direction:column}.cta .btn{white-space:normal}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#beranda"><img src="assets/logo-kang-adi.webp" alt="Logo Kang Adi"><span class="brand-text">KANG <span>ADI</span><small>JASA RENOVASI &amp; BANGUN BARU</small></span></a>
+    <nav class="navlinks" aria-label="Navigasi utama">
+      <a href="#layanan">Layanan</a><a href="#tentang">Kenapa Kami</a><a href="#proses">Cara Kerja</a><a href="#kontak">Kontak</a>
+    </nav>
+    <a class="btn" href="https://wa.me/62895404466622?text=Halo%20Kang%20Adi%2C%20saya%20mau%20konsultasi%20renovasi%20rumah." target="_blank" rel="noopener">Chat WhatsApp</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="beranda">
+    <div class="wrap">
+      <div class="eyebrow">Jasa Renovasi & Bangun Rumah • Jabodetabek</div>
+      <h1>Rumah Lebih Nyaman, Rapi, dan Sesuai Kebutuhan.</h1>
+      <p>Kang Adi siap membantu renovasi rumah maupun bangun baru. Konsultasikan kebutuhan dan anggaran Anda terlebih dahulu—kami bantu cari solusi pekerjaan yang sesuai.</p>
+      <div class="hero-actions">
+        <a class="btn" href="https://wa.me/62895404466622?text=Halo%20Kang%20Adi%2C%20saya%20mau%20konsultasi%20renovasi%20rumah." target="_blank" rel="noopener">💬 Konsultasi via WhatsApp</a>
+        <a class="btn outline" href="#layanan">Lihat Layanan</a>
+      </div>
+      <div class="trust"><span>Renovasi kecil hingga menyeluruh</span><span>Bangun rumah baru</span><span>Area Jabodetabek</span></div>
+    </div>
+  </section>
+
+  <section class="services" id="layanan">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Layanan Kami</div>
+        <h2>Satu Kontak untuk Berbagai Kebutuhan Rumah</h2>
+        <p>Ceritakan pekerjaan yang Anda butuhkan. Kami bantu diskusikan pilihan pengerjaan dan perkiraan anggarannya.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="ico">🏠</div><h3>Renovasi Rumah</h3><p>Renovasi ringan, perbaikan bagian rumah, hingga renovasi menyeluruh sesuai kebutuhan.</p></article>
+        <article class="card"><div class="ico">🧱</div><h3>Bangun Rumah Baru</h3><p>Pekerjaan pembangunan dari awal dengan pembahasan kebutuhan, ukuran, dan anggaran.</p></article>
+        <article class="card"><div class="ico">🎨</div><h3>Cat & Finishing</h3><p>Pengecatan ulang, perapian dinding, serta pekerjaan finishing agar rumah tampak lebih segar.</p></article>
+        <article class="card"><div class="ico">▦</div><h3>Keramik & Granit</h3><p>Pemasangan atau penggantian lantai keramik dan granit untuk berbagai area rumah.</p></article>
+        <article class="card"><div class="ico">🔨</div><h3>Dapur & Plafon</h3><p>Pembuatan meja dapur, perapian area dapur, dan pemasangan plafon sesuai desain.</p></article>
+        <article class="card"><div class="ico">🏗️</div><h3>Atap & Kanopi</h3><p>Perbaikan atau penggantian atap serta pemasangan kanopi baja ringan dan spandek.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang">
+    <div class="wrap why-grid">
+      <div class="photo" role="img" aria-label="Inspirasi rumah modern"></div>
+      <div class="why">
+        <div class="eyebrow">Kenapa Kang Adi?</div>
+        <h2>Jelas Kebutuhannya, Dibahas Anggarannya.</h2>
+        <p>Setiap rumah dan kebutuhan pemiliknya berbeda. Karena itu, pekerjaan sebaiknya dimulai dengan komunikasi yang jelas agar ruang lingkup, bahan, dan biaya lebih mudah dipahami bersama.</p>
+        <ul class="checklist">
+          <li>Bisa konsultasi sebelum menentukan pekerjaan</li>
+          <li>Diskusi kebutuhan dan anggaran terlebih dahulu</li>
+          <li>Layanan renovasi, perbaikan, dan bangun baru</li>
+          <li>Melayani wilayah Jabodetabek</li>
+        </ul>
+        <a class="btn" href="https://wa.me/62895404466622?text=Halo%20Kang%20Adi%2C%20saya%20ingin%20tanya%20layanan%20renovasi." target="_blank" rel="noopener">Tanya Pekerjaan Anda</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps" id="proses">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Cara Kerja</div>
+        <h2>Mulai dari Konsultasi, Lalu Tentukan Langkahnya</h2>
+        <p>Alur sederhana supaya kebutuhan pekerjaan lebih jelas sebelum dimulai.</p>
+      </div>
+      <div class="step-grid">
+        <div class="step"><div class="num">01</div><h3>Ceritakan Kebutuhan</h3><p>Kirim foto, lokasi area, dan jelaskan bagian rumah yang ingin dikerjakan melalui WhatsApp.</p></div>
+        <div class="step"><div class="num">02</div><h3>Bahas Survei & Anggaran</h3><p>Diskusikan ukuran, bahan, ruang lingkup pekerjaan, dan kebutuhan survei lokasi.</p></div>
+        <div class="step"><div class="num">03</div><h3>Sepakati Pekerjaan</h3><p>Rincian pekerjaan dan biaya dibahas terlebih dahulu sebelum pekerjaan disepakati.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Inspirasi Pekerjaan</div>
+        <h2>Rumah Impian Dimulai dari Rencana yang Tepat</h2>
+        <p>Bagian ini bisa diganti dengan foto asli hasil pekerjaan Kang Adi agar calon pelanggan lebih percaya.</p>
+      </div>
+      <div class="gallery">
+        <img src="assets/kanopi-selesai.jpg" alt="Hasil pekerjaan kanopi baja ringan Kang Adi" loading="lazy">
+        <img src="assets/kanopi-proses.jpg" alt="Proses pengerjaan kanopi" loading="lazy">
+        <img src="assets/rumah-loster.jpg" alt="Hasil pekerjaan tampak depan rumah dengan loster" loading="lazy">
+        <img src="assets/teras-bata.jpg" alt="Hasil pekerjaan teras rumah" loading="lazy">
+        <img src="assets/kamar-mandi.jpg" alt="Hasil pekerjaan kamar mandi dan keramik" loading="lazy">
+        <img src="assets/rumah-modern.jpg" alt="Hasil pekerjaan rumah modern" loading="lazy">
+        <img src="assets/dak-beton.jpg" alt="Proses pekerjaan dak beton" loading="lazy">
+        <img src="assets/kanopi-kaca.jpg" alt="Contoh pekerjaan kanopi" loading="lazy">
+        <img src="assets/interior-rumah.jpg" alt="Interior rumah" loading="lazy">
+      </div>
+      <p class="gallery-note">Dokumentasi foto pekerjaan dan proses renovasi Kang Adi.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap cta-inner">
+      <div><h2>Ada Bagian Rumah yang Mau Diperbaiki?</h2><p>Kirim foto dan ceritakan kebutuhan Anda. Mari diskusikan langkah yang paling sesuai.</p></div>
+      <a class="btn" href="https://wa.me/62895404466622?text=Halo%20Kang%20Adi%2C%20saya%20mau%20konsultasi%20pekerjaan%20rumah." target="_blank" rel="noopener">Hubungi Kang Adi di WhatsApp</a>
+    </div>
+  </section>
+
+  <section class="contact" id="kontak">
+    <div class="wrap">
+      <div class="contactbox">
+        <div class="eyebrow">Hubungi Kami</div>
+        <h2 style="margin:8px 0">Kang Adi — Jasa Renovasi Rumah</h2>
+        <p style="color:#666">Renovasi rumah • Bangun baru • Perbaikan rumah • Kanopi</p>
+        <p><strong>WhatsApp: 0895-4044-66622</strong></p>
+        <p>Area layanan: Jabodetabek</p>
+        <a class="btn" href="https://wa.me/62895404466622?text=Halo%20Kang%20Adi%2C%20saya%20mendapatkan%20kontak%20dari%20website." target="_blank" rel="noopener">Mulai Chat WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="year">2026</span> Kang Adi. Jasa Renovasi Rumah & Bangun Baru.</div>
+    <div>Melayani wilayah Jabodetabek</div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/62895404466622?text=Halo%20Kang%20Adi%2C%20saya%20mau%20konsultasi." target="_blank" rel="noopener" aria-label="Chat Kang Adi via WhatsApp">WhatsApp ↗</a>
+</body>
+</html>
